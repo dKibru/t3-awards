@@ -1,50 +1,27 @@
-# Welcome to [Astro](https://astro.build)
+# t3-awards
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+Welcome to the t3-awards repository! This repository showcases the nominees and winners of the annual tech award called the t3-award, which is hosted and presented by Theo.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Nominees
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+The nominees for the t3-award are as follows:
 
+- Nominee 1
+- Nominee 2
+- Nominee 3
+- Nominee 4
 
-## 🚀 Project Structure
+## Winners
 
-Inside of your Astro project, you'll see the following folders and files:
+The winners of the t3-award are as follows:
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Winner 1
+- Winner 2
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Livestream
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+You can watch the t3-awards livestream on YouTube [here](https://www.youtube.com/watch?v=Ql5_AeSCLTM).
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Contact
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+For any questions or inquiries about the t3-awards, please contact us at t3-awards@example.com.
