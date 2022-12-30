@@ -1,28 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-const categories = (await Astro.glob('./categories/*.{md,mdx}')).sort(
-	(a, b) => Number(a.frontmatter.order) - Number(b.frontmatter.order)
-);
+import Layout from './Layout.astro';
+
+export interface Props {
+	content: {
+		title: string;
+		order: number;
+	};
+}
+
+const {
+	content: { title, order },
+} = Astro.props;
 ---
 
 <Layout title="T3 Awards">
 	<main>
-		<h1>T3 <span class="text-gradient">Awards</span></h1>
+		<a href="/"><h1>T3 <span class="text-gradient">Awards</span></h1></a>
 		<p class="instructions">
-			Nominees and winners of the FIRST EVER T3 AWARDS
-		</p>
-		<ul role="list" class="link-card-grid">
-			{categories.map(category => <Card
-				href={category.url}
-				title={category.frontmatter.title}
-				body={category.frontmatter.except}
-			/>)}
-		</ul>
+            {title}
+        </p>
+        <p>
+            <slot />
+        </p>
 	</main>
 </Layout>
 
-<style>
+
+<style is:global>
 	main {
 		margin: auto;
 		padding: 1.5rem;
@@ -59,10 +63,15 @@ const categories = (await Astro.glob('./categories/*.{md,mdx}')).sort(
 	.instructions strong {
 		color: rgb(var(--accent));
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+    li {
+		padding-left: 10px;
+        display: list-item;
+        margin-left : 1em; 
+    }
+    h2 {
+		size: 13px;
+        font-weight: bolder;
+        margin-top: 5px;
+    }
+
 </style>
