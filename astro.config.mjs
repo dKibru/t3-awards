@@ -12,5 +12,6 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dkibru.github.io/t3-awards',
+  base: 't3-awards',
   integrations: [tailwind(), react(), mdx()]
 });
